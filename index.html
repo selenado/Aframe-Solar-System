@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html>
+    
+    <head>
+        <title>A-Frame Project</title>
+        <script src="https://aframe.io/releases/0.2.0/aframe.min.js"></script>
+    </head>
+    
+    <body>
+        <a-scene>
+            <a-entity camera look-controls position="80 25 100"></a-entity>
+            <a-sky src="img/Sky.jpg"></a-sky>
+                        
+                <a-ring color="#262626" radius-inner="32" radius-outer="33" side="double" rotation="90 0 0"></a-ring>
+                <a-ring color="#262626" radius-inner="50" radius-outer="51" side="double" rotation="90 0 0"></a-ring>
+                <a-ring color="#262626" radius-inner="60" radius-outer="61" side="double" rotation="90 0 0"></a-ring>
+                <a-ring color="#262626" radius-inner="70" radius-outer="71" side="double" rotation="90 0 0"></a-ring>
+                <a-ring color="#262626" radius-inner="250" radius-outer="255" side="double" rotation="90 0 0"></a-ring>
+                <a-ring color="#262626" radius-inner="450" radius-outer="465" side="double" rotation="90 0 0"></a-ring>
+                <a-ring color="#262626" radius-inner="580" radius-outer="605" side="double" rotation="90 0 0"></a-ring>
+                <a-ring color="#262626" radius-inner="700" radius-outer="725" side="double" rotation="90 0 0"></a-ring>
+            
+            <a-entity position="0 0 0" rotation="0 0 0">
+                <a-sphere position="0 0 0" scale="20 20 20" src="img/Sun.jpeg">
+                <a-animation attribute="rotation" to=" 0 360 0" dur="20000" repeat="indefinite" easing="linear"></a-animation></a-sphere>     
+            </a-entity>
+            
+            <a-entity position="0 0 0" rotation="0 0 0">
+                <a-animation attribute="rotation" to="0 360 0" dur="20000" fill="forwards" easing="linear" repeat="indefinite"></a-animation>
+                <a-sphere position="32 0 0" scale=".5 .5 .5" rotation="0 0 0" src="img/Mercury.jpeg">
+                <a-animation attribute="rotation" to="0 360 0" dur="25000" easing="linear" repeat="indefinite" ></a-animation></a-sphere>
+            </a-entity>
+
+            <a-entity position="0 0 0" rotation="0 0 0">
+                <a-animation attribute="rotation" to="0 360 0" dur="25000" fill="forwards" easing="linear" repeat="indefinite"></a-animation>
+                <a-sphere position="50 0 0" scale="2 2 2" src="img/Venus.jpeg">
+                <a-animation attribute="rotation" to="0 360 0" dur="15000" repeat="indefinite" easing="linear"></a-animation></a-sphere>
+            </a-entity>
+
+            <a-entity position="0 0 0" rotation="0 0 0">
+                <a-animation attribute="rotation" to="0 360 0" dur="35000" fill="forwards" easing="linear" repeat="indefinite"></a-animation>
+                <a-sphere position="60 0 0"  scale="2.2 2.2 2.2" src="img/Earth.jpeg">
+                <a-animation attribute="rotation" to="0 360 0" dur="15000" repeat="indefinite" ></a-animation>
+                </a-sphere>
+            </a-entity>
+
+            <a-entity position="0 0 0" rotation="0 0 0">
+                <a-animation attribute="rotation" to="0 360 0" dur="45000" fill="forwards" easing="linear" repeat="indefinite"></a-animation>
+                <a-sphere position="70 0 0" scale="1.5 1.5 1.5" src="img/Mars.jpeg">
+                <a-animation attribute="rotation" to="0 360 0" dur="15000" repeat="indefinite" easing="linear"></a-animation></a-sphere>
+            </a-entity>
+            
+            <a-entity position="0 0 0" rotation="0 0 0">
+                <a-animation attribute="rotation" to="0 360 0" dur="60000" fill="forwards" easing="linear" repeat="indefinite"></a-animation>
+                <a-sphere position="250 0 0"  scale="18 18 18" src="img/Jupiter.jpeg">
+                <a-animation attribute="rotation" to="0 360 0" dur="15000" repeat="indefinite" easing="linear"></a-animation></a-sphere>
+            </a-entity>
+            
+            <a-entity position="0 0 0" rotation="0 0 0">
+                <a-animation attribute="rotation" to="0 360 0" dur="65000" fill="forwards" easing="linear" repeat="indefinite"></a-animation>
+                <a-sphere position="450 0 0"  scale="15 15 15" src="img/Saturn.jpeg">
+                    <a-ring color="#fff2cc" radius-inner="1.2" radius-outer="1.3" side="double" rotation="45 45 0"></a-ring>
+                    <a-ring color="#ffdd99" radius-inner="1.4" radius-outer="1.5" side="double" rotation="45 45 0"></a-ring>
+                    <a-ring color="#d2a679" radius-inner="1.6" radius-outer="1.7" side="double" rotation="45 45 0"></a-ring>
+                    <a-animation attribute="rotation" to="0 360 0" dur="15000" repeat="indefinite" easing="linear"></a-animation></a-sphere>
+            </a-entity>
+            
+            <a-entity position="0 0 0" rotation="0 0 0">
+                <a-animation attribute="rotation" to="0 360 0" dur="70000" fill="forwards" easing="linear" repeat="indefinite"></a-animation>
+                <a-sphere position="580 0 0"  scale="8 8 8" rotation="0 0 0" src="img/Uranus.jpeg">
+                <a-animation attribute="rotation" to="360 0 0" dur="15000" repeat="indefinite" easing="linear"></a-animation></a-sphere>
+            </a-entity>         
+            
+            <a-entity position="0 0 0" rotation="0 0 0">
+                <a-animation attribute="rotation" to="0 360 0" dur="75000" fill="forwards" easing="linear" repeat="indefinite"></a-animation>
+                <a-sphere position="700 0 0"  scale="7 7 7" src="img/Neptune.jpeg">
+                <a-animation attribute="rotation" to="0 360 0" dur="15000" repeat="indefinite" easing="linear"></a-animation></a-sphere>        
+          </a-entity>
+        </a-scene>
+    </body>
+</html>
+
+
+
+
+
